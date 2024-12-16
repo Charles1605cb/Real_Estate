@@ -237,11 +237,10 @@
     }
     .menu{
         display: block; 
+        position: relative;
+        top: 60px;
     }
-    .cancel #toggle_hide{
-        display: none;
-    }
-    #toggle_hide{
+    #cancel{
         display: none;
     }
     .footer1 {
