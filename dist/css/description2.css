@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.Description{
+    display: flex;
+    place-content: center;
+    padding: 40px;
+}
+.card-img-top{
+    background:linear-gradient(rgb(50, 50, 50, 0.5),rgb(50, 50, 50, 0.7));
+}
+.card-img-top:hover{
+    cursor: pointer;
+    transition: .3s;
+    outline: 2px solid blue;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin: 20px 0px;
+}
+.title:hover{
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: underline 3px solid lightseagreen;
+}
+.card-title1{
+    position: relative;
+    right: 18px;
+}
+.card-title2{
+    position: relative;
+    left: 19px;
+}
+.card-text{
+    position: relative;
+    right: 18px;
+}
+.card-text:hover{
+    cursor: pointer;
+    transition: .3s;
+    color: blue;
+    text-decoration: underline 3px solid lightseagreen;
+}
+.Description h1{
+    text-align: center;
+}
+.F{
+    text-align: center;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 18px;
+    padding-right: 30px;
+    margin: 30px 0;
+
+}
+.list:hover{
+    cursor: pointer;
+    transition: .3s;
+    /* text-decoration: underline 5px solid lightseagreen; */
+}
+.card a{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.i:hover{
+   cursor: pointer;
+   transform: .3s;
+}
