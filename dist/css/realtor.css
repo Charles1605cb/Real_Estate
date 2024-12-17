@@ -108,7 +108,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    width: 92%;
+    /* width: 92%; */
     margin: 0px 40px;
    
 }
@@ -123,7 +123,9 @@
 .card-img-top{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
+}
+.card img{
+    width: 100%;
 }
 .pt{
     display: inline-flex;
@@ -199,15 +201,78 @@
 .menu{
     display: none;
 }
+#loader{
+    display: none;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--white);
+}
+#main{
+    display: none;
+}
+.loader {
+    position: relative;
+    color: var(--lightgreen);
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid var(--lightgreen);
+    border-left: 50px solid transparent;
+    animation: 1s starRotate linear infinite;
+}
+.loader:before {
+    border-bottom: 40px solid var(--lightgreen);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -22px;
+    left: -31px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+.loader:after {
+    content: '';
+    position: absolute;
+    display: block;
+    color: var(--lightgreen);
+    top: 1.5px;
+    transform: rotate(-70deg);
+    left: -52px;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid var(--lightgreen);
+    border-left: 50px solid transparent;
+}
+
+@keyframes starRotate {
+  0%{    transform: rotate(0deg) scale(0.15)}
+  50%{    transform: rotate(360deg) scale(1)}
+  100%{    transform: rotate(720deg) scale(0.15)}
+}
+    
 @media screen and (min-width:0) and (max-width:750px) {
+    /* .main{
+        overflow-x: hidden;
+    } */
     .nav_links{
         display: none; 
         color: white;
     }
-    .nav_contents{
+    #nav_links{
         text-align: center;
         min-height: 100vh;
-        background: green;
+        background: var(--lightgreen);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        width: 100%;
     }
     #img{
         position: absolute;
@@ -224,20 +289,47 @@
     }
     .menu{
         display: block; 
+        position: relative;
+        top: 60px;
     }
-    #toggle_hide{
+    #cancel{
         display: none;
     }
     .footer1 {
         display: block;
         margin: 20px;
+
     }
     #in{
         width: 50%;
     }
-    .footer2{
+    .section{
+        display: block;
+        padding: 0;
+    }
+    .categories{
+        display: block;
         text-align: center;
     }
+    .footer2{
+        text-align: center;
+        /* background: red; */
+        padding: 10px 10px;
+    }
+    .card img{
+        width: 100%;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #input{
+        width: 250px;
+    }
+    /* .footer1{
+        background: yellow;
+    } */
     
 
 }

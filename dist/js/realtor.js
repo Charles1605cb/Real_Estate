@@ -1,6 +1,5 @@
 
-const menu = document.getElementById("toggle_show")
-console.log(menu)
+
 
 const images = document.querySelectorAll(".card-img-top");
 console.log(images)
@@ -11,29 +10,22 @@ for (let i = 0; i < images.length; i++) {
     });
 };
 
-// let menu_control = document.getElementById("toggle_show")
-const cancel = document.getElementById("toggle_hide")
+const menu = document.getElementById("menu")
+console.log(menu);
+const cancel = document.getElementById("cancel")
 const nav_contents = document.querySelector(".nav_links")
 
-const toggle_show = () => {
-    if (nav_contents.style.display = "none") { 
-        nav_contents.style.display = "block";
-        menu.style.display = "none";
-        cancel.style.display = "block";
-    };
-};
+menu.addEventListener("click", () => {
+    menu.style.display = "none";
+    cancel.style.display = "block";
+    nav_links.style.display = "block"
+});
 
-menu.addEventListener("click", toggle_show);
-
-const toggle_hide = () => {
-    if (nav_contents.style.display === "block") { 
-        nav_contents.style.display = "none";
-        cancel.style.display = "none";
-        menu.style.display = "block";
-    };
-};
-
-cancel.addEventListener("click", toggle_hide);
+cancel.addEventListener("click", () => {
+    menu.style.display = "block";
+    cancel.style.display = "none";
+    nav_links.style.display = "none"
+});
 
 let buy = document.getElementById("buy");
 let lease = document.getElementById("lease");
@@ -51,3 +43,15 @@ sold.addEventListener("click", () => {
     window.location.href = "sold.html"
 });
 
+
+const Loader = document.getElementById("loader")
+const main = document.getElementById("main")
+
+let ShowLoader = () => {
+    setTimeout(() => {
+        Loader.style.display = "none"
+        main.style.display = "block"
+    }, 3000);
+};
+
+ShowLoader();
