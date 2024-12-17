@@ -5,6 +5,9 @@ let agent = document.querySelectorAll(".agent");
 let menu = document.getElementById("menu");
 let cancel = document.getElementById("cancel");
 let nav = document.getElementById("nav_links");
+let loader = document.getElementById("loader");
+let sold = document.getElementById("sold");
+
 
 
 for (let i = 0; i < image.length; i++) {
@@ -43,3 +46,12 @@ cancel.addEventListener("click", () => {
     cancel.style.display = "none";
     nav.style.display = "none"
 });
+
+let ShowLoader = () => {
+    setTimeout(() => {
+        loader.style.display = "none";
+        sold.style.display = "block"
+    }, 3000);
+};
+
+ShowLoader();
