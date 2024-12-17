@@ -1,6 +1,5 @@
 
-const menu = document.getElementById("menu")
-console.log(menu);
+
 
 const images = document.querySelectorAll(".card-img-top");
 console.log(images)
@@ -11,7 +10,8 @@ for (let i = 0; i < images.length; i++) {
     });
 };
 
-// let menu_control = document.getElementById("toggle_show")
+const menu = document.getElementById("menu")
+console.log(menu);
 const cancel = document.getElementById("cancel")
 const nav_contents = document.querySelector(".nav_links")
 
@@ -43,3 +43,15 @@ sold.addEventListener("click", () => {
     window.location.href = "sold.html"
 });
 
+
+const Loader = document.getElementById("loader")
+const main = document.getElementById("main")
+
+let ShowLoader = () => {
+    setTimeout(() => {
+        Loader.style.display = "none"
+        main.style.display = "block"
+    }, 3000);
+};
+
+ShowLoader();
