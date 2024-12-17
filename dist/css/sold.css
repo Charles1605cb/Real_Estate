@@ -127,13 +127,13 @@
         left: 0;
         right: 0;
         text-align: center;
-        min-width: 100vh;
+        min-height: 100vh;
         transition: all 0.4s ease;
         animation: navbarAnimate 2s linear;
     }
     .nav_links span{
         display: block;
-        margin: 20px 0;
+        margin: 60px 0;
     }
     .nav_links img{
         position: absolute;
