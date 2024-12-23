@@ -9,23 +9,29 @@
     --white: #fff;
     --darkgreen: #209040;
     --lightblack: #29292b;
+    --brown: rgb(134, 103, 63);
+    --lightpurple: rgb(146, 90, 109);
+    --purple: rgb(143, 10, 54);
 }
 ::-webkit-scrollbar{
     width: 10px;
   }
   ::-webkit-scrollbar-track{
-    background: var(--lightblack);
+    background: var(--brown);
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--lightgreen);
+    background: var(--lightpurple);
     border-radius: 50px;
   }
   ::-webkit-scrollbar-thumb:hover{
-      background: var(--darkgreen);
+      background: var(--purple);
       transition: .4s;
   }
-#sold{
+#dashboard{
     display: none;
+}
+.dashboard{
+    margin: 0 20px;
 }
 #loader{
     display: none;
@@ -119,103 +125,87 @@
     position: relative;
     top: 5px;
 }
-.background{
+#date{
+    display: grid;
+    place-content: center;
     text-align: center;
-    background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.7)), url(https://s3-alpha-sig.figma.com/img/40e8/c487/884bb2864e318e38edc81fba4c5bc2fd?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hX7jN3NpJmbAItR19Pa52PQbjceDu2vUKBFRES3XhODxF3kQhpuuPPE2Br8sOwjUee4~IoWDIQQg-9NYvRPTpUsYml-SrYwAnt~93EdTkHlAhT-IrGYo184wUVIchK2f2~TXo7bqge~gI-p8SYM3c3xr395R-pPsn2C-wiJ24hy0gOSVn2B5Ong-bP3Zu-loJvT0f6FW~Lo3LJrmZ-tG34xwGa3mVxfWflcFsTA1oIzqjAjI2tJpjwDxaffbg7uAty0gCkLWExesDDnmzpR9Xbpw2Pw1nDWe67LiKC3JII4w22T2DBpuvjKKTfY95kkP1RUTABW6T1JesYlYCL-KAQ__) no-repeat center center/cover;
-    padding: 300px;
-    margin-top: 140px;
-    text-transform: capitalize;
-    color: var(--white);
-    font-size: 1.8rem;
+    min-height: 50vh;
 }
-.sold{
-    text-align: center;
-    /* display: none; */
-    margin: 0 30px;
-}
-.sold h2{
-    padding: 30px;
-}
-.grid{
+.about{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
-    row-gap: 40px;
+    gap: 10px;
+    margin: 20px 0;
 }
-.grid img{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 400px;
-    box-shadow: 0 0 5px #2c2b2b;
+.owned, .rented, .leased{
+    outline: 1px solid #29292b;
 }
-.grid img:hover{
-    box-shadow: 0 10px 20px rgb(29, 29, 29);
-    cursor: pointer;
-    transform: translateY(-10px);
-    transition: .3s;
+.owned p, .rented p, .leased p{
+    margin-bottom: 30px;
 }
-.address{
-    background: #f5f5f5;
-    box-shadow: 0 0 10px #2c2b2b;
-    margin: 0 10px;
-    padding: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    width: 400px;
+.location h1{
+    text-align: center;
 }
-.address:hover{
-    background: #f8f8f8f8;
-    box-shadow: 10px 10px  25px #000;
-    cursor: pointer;
-    transform: translateY(10px);
-    transition: .3s;
+.chart img{
+    width: 100%;
 }
-.place{
+.index{
+    text-align: center;
+    margin: 100px;
+}
+.pie{
     display: flex;
     justify-content: space-between;
 }
-.state{
+.pie img{
+    width: 100%;
+}
+.states > div{
+    margin: 50px;
+}
+.imo h2, .lagos h2, .abuja h2, .ebonyi h2, .delta h2{
     display: flex;
     justify-content: flex-start;
 }
-.footer{
-    background: var(--lightgreen);
-    color: var(--white);
+.imo p, .lagos p, .abuja p, .ebonyi p, .delta p{
+    color: var(--lightblack);
+}
+.imo span, .lagos span, .abuja span, .ebonyi span, .delta span{
     display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-    padding: 20px;
-    position: absolute;
-    left: 0;
-    right: 0;
+    flex-direction: row;
 }
-.footer_name span{
-    margin: 20px;
+#red{
+    color: red;
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
 }
-.footer_name p{
-    margin: 10px;
+#yellow{
+    color: rgb(241, 241, 34);
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
 }
-.footer_description{
-    display: flex;
-    justify-content: space-between;
+#blue{
+    color: blue;
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
 }
-.footer_description > div{
-    margin: 20px;
+#sky{
+    color: rgb(63, 120, 143);
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
 }
-.about span, .support span, .find_us span, .social span{
-    margin-bottom: 20px;
-}
-.about p, .support p, .find_us p, .social p{
-    margin: 5px 0;
+#green{
+    color: rgb(41, 104, 41);
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
 }
 
 @media screen and (min-width:0) and (max-width:750px) {
-    .grid{
-        grid-template-columns: auto;
-    }
-    .background{
-        padding: 100px;
-    }
     .nav_links2{
         display: none;
     }
@@ -250,11 +240,5 @@
         display: none;
         position: absolute;
         top: 20px;
-    }
-}
-
-@media screen and (min-width:800px) and (max-width:1300px) {
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
     }
 }

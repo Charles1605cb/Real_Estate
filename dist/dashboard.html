@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Signika+Negative:wght@300..700&display=swap');
+        </style>
+</head>
+<body>
+    <header id="loader">
+        <span class="loader"></span>
+    </header>
+    <div class="dashboard" id="dashboard">
+        <div class="nav">
+            <div class="name">
+                KEEV
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars" id="menu"></i>
+                <i class="fa-solid fa-xmark" id="cancel"></i>
+            </div>
+            <div class="nav_links" id="nav_links">
+                <span class="buy">Buy</span>
+               <span>Dashboard</span>
+                <span class="agent">Find Realtors</span>
+                <span class="lease">Lease</span>
+                <span>Saved Houses</span>
+                <span class="sold">Just Sold</span>
+                <span>Contact Us</span>
+                <img src="images/just_sold/profile.png" alt="" class="pic">
+            </div>
+            <div class="nav_links2">
+                <span class="buy">Buy</span>
+               <span>Dashboard</span>
+                <span class="agent">Find Realtors</span>
+                <span class="lease">Lease</span>
+                <span>Saved Houses</span>
+                <span class="sold">Just Sold</span>
+                <span>Contact Us</span>
+                <img src="images/just_sold/profile.png" alt="" class="pic">
+            </div>
+        </div>
+        <div id="date">00</div>
+        <div class="about">
+            <div class="owned">
+                <p>
+                    properties owned
+                </p>
+                <p>
+                    250
+                </p>
+            </div>
+            <div class="rented">
+                <p>
+                    properties rented
+                </p>
+                <p>
+                    100
+                </p>
+            </div>
+            <div class="leased">
+                <p>
+                    properties leased
+                </p>
+                <p>
+                    50
+                </p>
+            </div>
+        </div>
+        <div class="location">
+            <h1>
+                Properties By Location
+            </h1>
+            <div class="chart">
+                <img src="images/dashboard/chart.png" alt="">
+            </div>
+        </div>
+        <div class="index">
+            <h1>
+                Property Availabilty Index
+            </h1>
+            <div class="pie">
+                <div>
+                    <img src="images/dashboard/pie.png" alt="">
+                </div>
+                <div class="states">
+                    <div class="imo">
+                        <span>
+                            <i class="fa-solid fa-circle-dot" id="red"></i>
+                                <h2>
+                                    imo
+                                </h2>
+                        </span>
+                        <p>
+                            Urban development has been on an astronomic rise in Imo recently, 
+                            making it a hotspot for property trade.
+                        </p>
+                    </div>
+                    <div class="lagos">
+                        <span>
+                            <i class="fa-solid fa-circle-dot" id="yellow"></i>
+                            <h2>
+                                lagos    
+                            </h2>                             
+                        </span>
+                        <p>
+                            Over population has made land value depreciate in Lagos recently.
+                        </p>
+                    </div>
+                    <div class="abuja">
+                        <span>
+                            <i class="fa-solid fa-circle-dot" id="blue"></i>
+                            <h2>
+                                abuja    
+                            </h2>                             
+                        </span>
+                        <p>
+                            There is a strong lack of choice property in Anuja, with most of it already claimed.
+                        </p>
+                    </div>
+                    <div class="ebonyi">
+                        <span>
+                            <i class="fa-solid fa-circle-dot" id="sky"></i>
+                            <h2>
+                                ebonyi    
+                            </h2>                             
+                        </span>
+                        <p>
+                            A vast majority of properties in Ebonyi are currently on the market.                        </p>
+                    </div>
+                    <div class="delta">
+                        <span>
+                            <i class="fa-solid fa-circle-dot" id="green"></i>
+                            <h2>
+                                delta    
+                            </h2>                             
+                        </span>
+                        <p>
+                            A decent amount of properties in Delta are currently available for sell.                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+<script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
+<script src="js/dashboard.js"></script>
+</html>

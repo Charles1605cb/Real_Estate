@@ -10,6 +10,20 @@
     --white: #fff;
     --black: #000;
 }
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background: var(--black);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--lightgreen);
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+      background: var(--lightgreen);
+      transition: .4s;
+  }
 .nav_container{
     z-index: 100;
     position: fixed;
