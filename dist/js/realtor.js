@@ -78,3 +78,9 @@ let ShowLoader = () => {
 };
 
 ShowLoader();
+
+let dashboard = document.getElementById("dashboard");
+
+dashboard.addEventListener("clcick", () => {
+    window.location.href = "dashboard.html";
+})

@@ -8,7 +8,7 @@
     --lightgreen: #00796b;
     --white: #fff;
 }
-.nav{
+.anav{
     background: var(--white);
     display: flex;
     justify-content: space-between;
@@ -19,71 +19,71 @@
     right: 0;
     z-index: 100;
 }
-.name{
+.aname{
     color: #00796b;
     position: relative;
     top: 20px;
 }
-.name:hover{
+.aname:hover{
     cursor: pointer;
     text-decoration: underline green;
 }
-.menu{
+.amenu{
     display: none;
     cursor: pointer;
 }
-.nav_links{
+.anav_links{
     display: none;
 }
-.nav_links span:hover, .nav_links2 span:hover{
+.anav_links span:hover, .anav_links2 span:hover{
     cursor: pointer;
     text-decoration: underline green;
 }
-.nav_links2 span{
+.anav_links2 span{
     margin: 10px;
 }
-.pic{
+.apic{
     width: 35px;
     height: 35px;
     border-radius: 50%;
     position: relative;
     top: 5px;
 }
-.background{
+.abackground{
     text-align: center;
-    background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.7)), url(https://s3-alpha-sig.figma.com/img/40e8/c487/884bb2864e318e38edc81fba4c5bc2fd?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hX7jN3NpJmbAItR19Pa52PQbjceDu2vUKBFRES3XhODxF3kQhpuuPPE2Br8sOwjUee4~IoWDIQQg-9NYvRPTpUsYml-SrYwAnt~93EdTkHlAhT-IrGYo184wUVIchK2f2~TXo7bqge~gI-p8SYM3c3xr395R-pPsn2C-wiJ24hy0gOSVn2B5Ong-bP3Zu-loJvT0f6FW~Lo3LJrmZ-tG34xwGa3mVxfWflcFsTA1oIzqjAjI2tJpjwDxaffbg7uAty0gCkLWExesDDnmzpR9Xbpw2Pw1nDWe67LiKC3JII4w22T2DBpuvjKKTfY95kkP1RUTABW6T1JesYlYCL-KAQ__) no-repeat center center/cover;
+    background: linear-gradient(rgba(50, 50, 50, 0.a5), rgba(50, 50, 50, 0.a7)), url(https://s3-alpha-sig.afigma.acom/img/40e8/c487/884bb2864e318e38edc81fba4c5bc2fd?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hX7jN3NpJmbAItR19Pa52PQbjceDu2vUKBFRES3XhODxF3kQhpuuPPE2Br8sOwjUee4~IoWDIQQg-9NYvRPTpUsYml-SrYwAnt~93EdTkHlAhT-IrGYo184wUVIchK2f2~TXo7bqge~gI-p8SYM3c3xr395R-pPsn2C-wiJ24hy0gOSVn2B5Ong-bP3Zu-loJvT0f6FW~Lo3LJrmZ-tG34xwGa3mVxfWflcFsTA1oIzqjAjI2tJpjwDxaffbg7uAty0gCkLWExesDDnmzpR9Xbpw2Pw1nDWe67LiKC3JII4w22T2DBpuvjKKTfY95kkP1RUTABW6T1JesYlYCL-KAQ__) no-repeat center center/cover;
     padding: 300px;
     margin-top: 140px;
     text-transform: capitalize;
     color: var(--white);
 }
-.sold{
+.asold{
     text-align: center;
     /* display: none; */
     margin: 0 30px;
 }
-.sold h2{
+.asold h2{
     padding: 30px;
 }
-.grid{
+.agrid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     row-gap: 40px;
 }
-.grid img{
+.agrid img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 400px;
     box-shadow: 0 0 5px #2c2b2b;
 }
-.grid img:hover{
+.agrid img:hover{
     box-shadow: 0 10px 20px rgb(29, 29, 29);
     cursor: pointer;
     transform: translateY(-10px);
     transition: .3s;
 }
-.address{
+.aaddress{
     background: #f5f5f5;
     box-shadow: 0 0 10px #2c2b2b;
     margin: 0 10px;
@@ -92,33 +92,33 @@
     border-bottom-right-radius: 20px;
     width: 400px;
 }
-.address:hover{
+.aaddress:hover{
     background: #f8f8f8f8;
     box-shadow: 10px 10px  25px #000;
     cursor: pointer;
     transform: translateY(10px);
     transition: .3s;
 }
-.place{
+.aplace{
     display: flex;
     justify-content: space-between;
 }
-.state{
+.astate{
     display: flex;
     justify-content: flex-start;
 }
 
 @media screen and (min-width:0) and (max-width:750px) {
-    .grid{
+    .agrid{
         grid-template-columns: auto;
     }
-    .background{
+    .abackground{
         padding: 100px;
     }
-    .nav_links2{
+    .anav_links2{
         display: none;
     }
-    .nav_links{
+    .anav_links{
         display: none;
         position: absolute;
         top: 45px;
@@ -128,23 +128,23 @@
         right: 0;
         text-align: center;
         min-width: 100vh;
-        transition: all 0.4s ease;
+        transition: all 0.a4s ease;
         animation: navbarAnimate 2s linear;
 
 
 }
-    .nav_links span{
+    .anav_links span{
         display: block;
         margin: 20px 0;
     }
-    .nav_links img{
+    .anav_links img{
         position: absolute;
         top: 40px;
         right: 20px;
         width: 75px;
         height: 75px;
     }
-    .menu{
+    .amenu{
         display:block;
     }
     #cancel{
@@ -155,7 +155,7 @@
 }
 
 @media screen and (min-width:800px) and (max-width:1300px) {
-    .grid{
+    .agrid{
         grid-template-columns: repeat(2, 1fr);
     }
 }

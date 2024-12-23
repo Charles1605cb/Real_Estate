@@ -130,6 +130,7 @@
     place-content: center;
     text-align: center;
     min-height: 50vh;
+    font-size: 3rem;
 }
 .about{
     display: grid;

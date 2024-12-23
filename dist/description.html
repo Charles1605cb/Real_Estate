@@ -71,7 +71,7 @@
                     Automated smart home
                 </div>
               </p>
-              <a href="#" class="btn btn-primary">Buy</a>
+              <a href="#" class="btn btn-primary" id="buy">Buy</a>
             </div>
 </div>
 </div>
@@ -80,11 +80,17 @@
 <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
 <script>
 
-    let arrow = document.getElementById("i");
+let arrow = document.getElementById("i");
+let buy = document.getElementById("buy");
 
 
-    arrow.addEventListener("click", () => {
-    window.location.href = "sold.html"
+arrow.addEventListener("click", () => {
+window.location.href = "sold.html"
 });
+
+buy.addEventListener("click", () => {
+    window.location.href = "index.html" 
+})
+
 </script>
 </html>
