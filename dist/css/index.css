@@ -130,9 +130,7 @@
         min-width: 100vh;
         transition: all 0.a4s ease;
         animation: navbarAnimate 2s linear;
-
-
-}
+    }
     .anav_links span{
         display: block;
         margin: 20px 0;
