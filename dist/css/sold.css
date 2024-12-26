@@ -234,13 +234,16 @@
   .background{
     padding: 100px;
   }
+  .nav{
+    right: 150px;
+  }
   .name{
     display: flex;
     justify-content: flex-start;
   }
   #menu{
-    position: relative;
-    right: 130px;
+    display: flex;
+    justify-content: flex-end;    
   }
   .nav_links2{
       display: none;
@@ -255,8 +258,6 @@
       right: 0;
       text-align: center;
       min-width: 100vh;
-      transition: all 0.4s ease;
-      animation: navbarAnimate 2s linear;
   }
   .nav_links span{
       display: block;
