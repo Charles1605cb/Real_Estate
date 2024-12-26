@@ -254,7 +254,8 @@
       top: 45px;
       background: green;
       color: var(--white);
-      left: -150px;
+      right: 0;
+      left: -260px;
       text-align: center;
       min-width: 100vh;
   }
