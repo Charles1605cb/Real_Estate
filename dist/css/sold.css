@@ -211,6 +211,9 @@
 }
 
 @media screen and (min-width:0) and (max-width:750px) {
+  #sold{
+    width: 200px;
+  }
   .sold{
     text-align: center;
   }
@@ -220,10 +223,10 @@
       gap: 30px;
     }
   .grid img{
-    width: 300px;
+    width: 100%;
   }
   .address{
-    width: 300px;
+    width: 100%;
   }
   .background{
     padding: 100px;
