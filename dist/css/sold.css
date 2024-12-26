@@ -239,8 +239,8 @@
     justify-content: flex-start;
   }
   #menu{
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
+    right: 50px;
   }
   .nav_links2{
       display: none;
