@@ -74,7 +74,7 @@ let ShowLoader = () => {
     setTimeout(() => {
         Loader.style.display = "none"
         main.style.display = "block"
-    }, 3000);
+    }, 9000);
 };
 
 ShowLoader();
