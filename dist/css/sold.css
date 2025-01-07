@@ -234,9 +234,6 @@
   .background{
     padding: 100px;
   }
-  .nav{
-    right: 150px;
-  }
   .name{
     display: flex;
     justify-content: flex-start;
@@ -254,19 +251,17 @@
       top: 45px;
       background: green;
       color: var(--white);
-      right: 0;
-      left: -260px;
+      /* right: 0;
+      left: -260px; */
       text-align: center;
-      min-width: 100vh;
+      min-height: 100vh;
+      width: 100%;
   }
   .nav_links span{
       display: block;
       margin: 20px 0;
   }
   .nav_links img{
-      position: absolute;
-      top: 40px;
-      right: 150px;
       width: 75px;
       height: 75px;
   }
@@ -278,7 +273,15 @@
       position: absolute;
       top: 20px;
   }
+  .pic{
+    position: absolute;
+    right: 80px;
+    top: 100px;
+  }
   .footer{
+    display: block;
+  }
+  .footer > div{
     display: block;
   }
 }
