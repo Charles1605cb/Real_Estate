@@ -88,6 +88,7 @@
   left: 0;
   right: 0;
   z-index: 100;
+  box-shadow: 0 0 4px var(--lightblack);
 }
 .name{
   color: #00796b;
@@ -144,7 +145,7 @@
 .grid img{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: 400px;
+  width: 85%;
   box-shadow: 0 0 5px #2c2b2b;
 }
 .grid img:hover{
@@ -155,14 +156,15 @@
 }
 .address{
   background: #f5f5f5;
-  box-shadow: 0 0 10px #2c2b2b;
+  box-shadow: 0 0 4px #2c2b2b;
   margin: 0 10px;
   padding: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  width: 400px;
+  width: 85%;
   position: relative;
-  left: 5px;
+  left: 25px;
+  bottom: 5px;
 }
 .address:hover{
   background: #f8f8f8f8;
@@ -184,7 +186,7 @@
   color: var(--white);
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 90px 0;
   padding: 20px;
   position: absolute;
   left: 0;
@@ -211,11 +213,11 @@
 }
 
 @media screen and (min-width:0) and (max-width:750px) {
-  #sold{
+  /* #sold{
     width: 300px;
-  }
+  } */
   .sold{
-    margin: 0 0 0 30px;
+    margin: 20px 20px;
     padding: 0;
   }
   .grid{
@@ -224,12 +226,12 @@
       gap: 30px;
     }
   .grid img{
-    width: 100%;
+    width: 80%;
   }
   .address{
-    width: 100%;
+    width: 80%;
     position: relative;
-    left: -10px;
+    /* left: 35px; */
   }
   .background{
     padding: 100px;
