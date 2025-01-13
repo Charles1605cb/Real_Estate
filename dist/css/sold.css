@@ -164,7 +164,7 @@
   width: 85%;
   position: relative;
   left: 25px;
-  bottom: 5px;
+  bottom: 4px;
 }
 .address:hover{
   background: #f8f8f8f8;
@@ -217,7 +217,7 @@
     width: 300px;
   } */
   .sold{
-    margin: 20px 20px;
+    margin: 20px 10px;
     padding: 0;
   }
   .grid{
@@ -226,12 +226,12 @@
       gap: 30px;
     }
   .grid img{
-    width: 80%;
+    width: 90%;
   }
   .address{
-    width: 80%;
+    width: 90%;
     position: relative;
-    /* left: 35px; */
+    left: 5px;
   }
   .background{
     padding: 100px;
