@@ -228,7 +228,7 @@
         width: 75px;
         height: 75px;
     }
-    .menu{
+    #bar{
         display:block;
     }
     #cancel{
