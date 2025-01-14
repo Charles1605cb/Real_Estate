@@ -191,6 +191,7 @@
     }
     .footer{
         display: block;
+        text-align: center;
       }
       .footer > div{
         display: block;
