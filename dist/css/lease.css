@@ -238,6 +238,7 @@
     }
     .footer{
         display: block;
+        text-align: center;
       }
       .footer > div{
         display: block;
@@ -277,4 +278,7 @@
     border-top-left-radius: 10px;
      position: relative;
     left: -8px;
+  }
+  #emai{
+    width: 110px;
   }
