@@ -266,6 +266,9 @@
   .nav_links img{
       width: 75px;
       height: 75px;
+      position: relative;
+      top: 30px;
+      left: 10px;
   }
   .menu{
       display:block;
