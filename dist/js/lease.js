@@ -38,6 +38,11 @@ for (let i = 0; i < dashboard.length; i++) {
         window.location.href = "dashboard.html"
     });
 };
+for (let i = 0; i < sold.length; i++) {
+    sold[i].addEventListener("click", () => {
+        window.location.href = "sold.html"
+    });
+};
 
 menu.addEventListener("click", () => {
     menu.style.display = "none";

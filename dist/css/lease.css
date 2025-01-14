@@ -148,30 +148,77 @@
   }
 
 @media screen and (min-width:0) and (max-width:750px) {
-    .grid{
-        grid-template-columns: auto;
-    }
-    .background{
+    .sold{
+        margin: 20px 10px;
+        padding: 0;
+      }
+      .grid{
+          grid-template-columns: auto;
+          text-align: center;
+          gap: 30px;
+        }
+      .grid img{
+        width: 90%;
+      }
+      .address{
+        width: 90%;
+        position: relative;
+        left: 5px;
+      }
+      .background{
         padding: 100px;
-    }
-    .nav_links2{
-        display: none;
-    }
-    .nav_links{
-        display: none;
+      }
+      .name{
+        display: flex;
+        justify-content: flex-start;
+      }
+      #menu{
+        display: flex;
+        justify-content: flex-end;    
+      }
+      .nav_links2{
+          display: none;
+      }
+      .nav_links{
+          display: none;
+          position: absolute;
+          top: 45px;
+          background: green;
+          color: var(--white);
+          /* right: 0;
+          left: -260px; */
+          text-align: center;
+          min-height: 100vh;
+          width: 100%;
+      }
+      .nav_links span{
+          display: block;
+          margin: 20px 0;
+      }
+      .nav_links img{
+          width: 75px;
+          height: 75px;
+          position: relative;
+          top: 30px;
+          left: 10px;
+      }
+      .menu{
+          display:block;
+      }
+      #cancel{
+          display: none;
+          position: absolute;
+          top: 20px;
+      }
+      .pic{
         position: absolute;
-        top: 45px;
-        background: green;
-        color: var(--white);
-        left: 0;
-        right: 0;
-        text-align: center;
-        min-width: 100vh;
-        transition: all 0.4s ease;
-        animation: navbarAnimate 2s linear;
-    }
-    .nav_links span{
+        right: 80px;
+        top: 100px;
+      }
+      .footer{
         display: block;
+
+
         margin: 20px 0;
     }
     .nav_links img{
