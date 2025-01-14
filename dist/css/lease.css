@@ -58,12 +58,12 @@
     text-transform: capitalize;
     color: var(--white);
 }
-.sold{
+.lease{
     text-align: center;
     /* display: none; */
     margin: 0 30px;
 }
-.sold h2{
+.lease h2{
     padding: 30px;
 }
 .grid{
@@ -116,9 +116,39 @@
     display: flex;
     justify-content: flex-start;
 }
+.footer{
+    background: var(--lightgreen);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 0;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .footer_name span{
+    margin: 20px;
+  }
+  .footer_name p{
+    margin: 10px;
+  }
+  .footer_description{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_description > div{
+    margin: 20px;
+  }
+  .about span, .support span, .find_us span, .social span{
+    margin-bottom: 20px;
+  }
+  .about p, .support p, .find_us p, .social p{
+    margin: 5px 0;
+  }
 
 @media screen and (min-width:0) and (max-width:750px) {
-    .sold{
+    .lease{
         margin: 20px 10px;
         padding: 0;
       }
@@ -186,6 +216,27 @@
         top: 100px;
       }
       .footer{
+        display: block;
+
+
+        margin: 20px 0;
+    }
+    .nav_links img{
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        width: 75px;
+        height: 75px;
+    }
+    .menu{
+        display:block;
+    }
+    #cancel{
+        display: none;
+        position: absolute;
+        top: 20px;
+    }
+    .footer{
         display: block;
       }
       .footer > div{
