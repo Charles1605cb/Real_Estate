@@ -228,7 +228,7 @@
         width: 75px;
         height: 75px;
     }
-    .menu{
+    #bar{
         display:block;
     }
     #cancel{
@@ -278,4 +278,7 @@
     border-top-left-radius: 10px;
      position: relative;
     left: -8px;
+  }
+  #emai{
+    width: 110px;
   }
