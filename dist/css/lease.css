@@ -58,12 +58,12 @@
     text-transform: capitalize;
     color: var(--white);
 }
-.sold{
+.lease{
     text-align: center;
     /* display: none; */
     margin: 0 30px;
 }
-.sold h2{
+.lease h2{
     padding: 30px;
 }
 .grid{
@@ -148,7 +148,7 @@
   }
 
 @media screen and (min-width:0) and (max-width:750px) {
-    .sold{
+    .lease{
         margin: 20px 10px;
         padding: 0;
       }
@@ -268,7 +268,6 @@
     outline: none;
     color: black;
     background: var(--white);
-   
   }
   .news_letter_sub button{
     padding: 8px 12px;
