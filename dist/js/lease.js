@@ -1,11 +1,11 @@
 let image = document.querySelectorAll(".image");
 let buy = document.querySelectorAll(".buy");
-let lease = document.querySelectorAll(".lease");
 let agent = document.querySelectorAll(".agent");
-let menu = document.getElementById("menu");
+let dashboard = document.querySelectorAll(".dashboard")
+let menu = document.getElementById("bar");
 let cancel = document.getElementById("cancel");
 let nav = document.getElementById("nav_links");
-let sold = document.getElementById("sold");
+let sold = document.querySelectorAll(".sold");
 
 
 for (let i = 0; i < image.length; i++) {
@@ -27,11 +27,6 @@ for (let i = 0; i < agent.length; i++) {
     });
 };
 
-for (let i = 0; i < lease.length; i++) {
-    lease[i].addEventListener("click", () => {
-        window.location.href = "lease.html"
-    });
-};
 
 for (let i = 0; i < dashboard.length; i++) {
     dashboard[i].addEventListener("click", () => {
@@ -39,10 +34,17 @@ for (let i = 0; i < dashboard.length; i++) {
     });
 };
 
+for (let i = 0; i < sold.length; i++) {
+    sold[i].addEventListener("click", () => {
+        window.location.href = "sold.html"
+    });
+};
+
+
 menu.addEventListener("click", () => {
+    nav.style.display = "block"
     menu.style.display = "none";
     cancel.style.display = "block";
-    nav.style.display = "block"
 });
 
 cancel.addEventListener("click", () => {
@@ -50,3 +52,4 @@ cancel.addEventListener("click", () => {
     cancel.style.display = "none";
     nav.style.display = "none"
 });
+// console.log(menu)
