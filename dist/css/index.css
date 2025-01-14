@@ -51,7 +51,7 @@
 }
 .abackground{
     text-align: center;
-    background: linear-gradient(rgba(50, 50, 50, 0.a5), rgba(50, 50, 50, 0.a7)), url(https://s3-alpha-sig.afigma.acom/img/40e8/c487/884bb2864e318e38edc81fba4c5bc2fd?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hX7jN3NpJmbAItR19Pa52PQbjceDu2vUKBFRES3XhODxF3kQhpuuPPE2Br8sOwjUee4~IoWDIQQg-9NYvRPTpUsYml-SrYwAnt~93EdTkHlAhT-IrGYo184wUVIchK2f2~TXo7bqge~gI-p8SYM3c3xr395R-pPsn2C-wiJ24hy0gOSVn2B5Ong-bP3Zu-loJvT0f6FW~Lo3LJrmZ-tG34xwGa3mVxfWflcFsTA1oIzqjAjI2tJpjwDxaffbg7uAty0gCkLWExesDDnmzpR9Xbpw2Pw1nDWe67LiKC3JII4w22T2DBpuvjKKTfY95kkP1RUTABW6T1JesYlYCL-KAQ__) no-repeat center center/cover;
+    background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.7)), url(https://s3-alpha-sig.figma.com/img/5874/af18/e49868eb23a1075506d0355218c49ee3?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TlRffAUJecEo0R1S1ZHaVTdc~n1Ij1PtBMrXzy~rel7tNhTMqQ-p7q7dqw6AZeKdESf46SMNQY5vH~LhoAdB08kKtBU4-C~E-QFFJQhEda7J6MlvSiP3paIY5Kec376uc2IaioHNVyGjsh-IhypKQQGnrevZ8HXNsbEKUfjZMlQO4gVu-5z3q92a9FAeTRL7CkRu7~yt6WDcRWo0x~mrJ2QQT9z3xdSJj-40fhPeQuiNDGy8ZO3kzvo6szCli4WG6Ab6Zc8VfvLic3vBpxkQeVg77ggJFcNvYy7qbSHKuUz6c5r2jyTClkIUwqqGfenJ4gQoznLuSrPBPe8aGEC4HQ__) no-repeat center center/cover;
     padding: 300px;
     margin-top: 140px;
     text-transform: capitalize;
@@ -107,6 +107,36 @@
     display: flex;
     justify-content: flex-start;
 }
+.footer{
+    background: var(--lightgreen);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 0;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .footer_name span{
+    margin: 20px;
+  }
+  .footer_name p{
+    margin: 10px;
+  }
+  .footer_description{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_description > div{
+    margin: 20px;
+  }
+  .about span, .support span, .find_us span, .social span{
+    margin-bottom: 20px;
+  }
+  .about p, .support p, .find_us p, .social p{
+    margin: 5px 0;
+  }
 
 @media screen and (min-width:0) and (max-width:750px) {
     .agrid{
@@ -150,6 +180,12 @@
         position: absolute;
         top: 20px;
     }
+    .footer{
+        display: block;
+      }
+      .footer > div{
+        display: block;
+      }
 }
 
 @media screen and (min-width:800px) and (max-width:1300px) {
