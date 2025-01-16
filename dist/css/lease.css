@@ -104,14 +104,14 @@
     display: flex;
     justify-content: space-between;
 }
-.size{
+/* .size{
     position: relative;
     right: 50px;
 }
 .size2{
     position: relative;
     right: 130px;
-}
+} */
 .state{
     display: flex;
     justify-content: flex-start;
