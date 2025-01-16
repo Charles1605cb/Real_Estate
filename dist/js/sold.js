@@ -82,7 +82,7 @@ let ShowLoader = () => {
     setTimeout(() => {
         loader.style.display = "none";
         sold.style.display = "block"
-    }, 3000);
+    }, 1000);
 };
 
 ShowLoader();
