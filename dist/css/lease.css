@@ -75,7 +75,7 @@
 .grid img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 400px;
+    width: 85%;
     box-shadow: 0 0 5px #2c2b2b;
 }
 .grid img:hover{
@@ -91,7 +91,10 @@
     padding: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 400px;
+    width: 85%;
+    position: relative;
+    left: 25px;
+    bottom: 4px;
 }
 .address:hover{
     background: #f8f8f8f8;
@@ -104,14 +107,14 @@
     display: flex;
     justify-content: space-between;
 }
-.size{
+/* .size{
     position: relative;
     right: 50px;
 }
 .size2{
     position: relative;
     right: 130px;
-}
+} */
 .state{
     display: flex;
     justify-content: flex-start;
