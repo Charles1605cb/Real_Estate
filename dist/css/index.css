@@ -91,6 +91,9 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 85%;
+    position: relative;
+    left: 25px;
+    bottom: 4px;
 }
 .aaddress:hover{
     background: #f8f8f8f8;

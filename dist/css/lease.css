@@ -52,7 +52,7 @@
 }
 .background{
     text-align: center;
-    background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.7)), url(https://s3-alpha-sig.figma.com/img/40e8/c487/884bb2864e318e38edc81fba4c5bc2fd?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hX7jN3NpJmbAItR19Pa52PQbjceDu2vUKBFRES3XhODxF3kQhpuuPPE2Br8sOwjUee4~IoWDIQQg-9NYvRPTpUsYml-SrYwAnt~93EdTkHlAhT-IrGYo184wUVIchK2f2~TXo7bqge~gI-p8SYM3c3xr395R-pPsn2C-wiJ24hy0gOSVn2B5Ong-bP3Zu-loJvT0f6FW~Lo3LJrmZ-tG34xwGa3mVxfWflcFsTA1oIzqjAjI2tJpjwDxaffbg7uAty0gCkLWExesDDnmzpR9Xbpw2Pw1nDWe67LiKC3JII4w22T2DBpuvjKKTfY95kkP1RUTABW6T1JesYlYCL-KAQ__) no-repeat center center/cover;
+    background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.7)), url() no-repeat center center/cover;
     padding: 300px;
     margin-top: 140px;
     text-transform: capitalize;
