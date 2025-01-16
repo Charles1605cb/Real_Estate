@@ -53,18 +53,29 @@ cancel.addEventListener("click", () => {
 let buy = document.getElementById("buy");
 let lease = document.getElementById("lease");
 let sold = document.getElementById("sold");
+let dashboard = document.getElementById(".dashboard");
 
 buy.addEventListener("click", () => {
     window.location.href = "index.html"
 });
 
-lease.addEventListener("click", () => {
-    window.location.href = "lease.html"
-});
+for (let i = 0; i < lease.length; i++) {
+    lease[i].addEventListener("click", () => {
+        window.location.href = "lease.html"
+    });
+};
 
-sold.addEventListener("click", () => {
-    window.location.href = "sold.html"
-});
+for (let i = 0; i < sold.length; i++) {
+    sold[i].addEventListener("click", () => {
+        window.location.href = "sold.html"
+    });
+};
+
+for (let i = 0; i < dashboard.length; i++) {
+    dashboard[i].addEventListener("click", () => {
+        window.location.href = "dashboard.html"
+    });
+};
 
 
 const Loader = document.getElementById("loader")
@@ -78,3 +89,6 @@ let ShowLoader = () => {
 };
 
 ShowLoader();
+
+
+

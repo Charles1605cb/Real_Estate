@@ -1,38 +1,15 @@
-
 let image = document.querySelectorAll(".image");
 let buy = document.querySelectorAll(".buy");
 let lease = document.querySelectorAll(".lease");
+let sold = document.querySelectorAll(".sold")
 let agent = document.querySelectorAll(".agent");
-let dashboard = document.querySelectorAll(".dashboard");
 let menu = document.getElementById("menu");
 let cancel = document.getElementById("cancel");
 let nav = document.getElementById("nav_links");
 let loader = document.getElementById("loader");
-let sold = document.getElementById("sold");
+let dashboard = document.getElementById("dashboard");
+let date = document.getElementById("date");
 
-// Please take note of this code below, it is very important for the functionality of the website
-
-// Prevent Image dragging
-
-    document.querySelectorAll("img").forEach((img) => {
-      img.addEventListener("mousedown", function (event) {
-        event.preventDefault();
-      });
-      img.addEventListener("contextmenu", function (event) {
-        event.preventDefault();
-      });
-    });
-
- // Add a box_shadow to the nav_container when a user scrolls
-    let nav_Container = document.querySelector(".nav");
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-            // Add a box_shadow to the nav_container
-            nav_Container.classList.add("nav_shadow");
-        }else{
-            nav_Container.classList.remove("nav_shadow");
-        }
-    });
 
 
 for (let i = 0; i < image.length; i++) {
@@ -60,9 +37,9 @@ for (let i = 0; i < lease.length; i++) {
     });
 };
 
-for (let i = 0; i < dashboard.length; i++) {
-    dashboard[i].addEventListener("click", () => {
-        window.location.href = "dashboard.html"
+for (let i = 0; i < sold.length; i++) {
+    sold[i].addEventListener("click", () => {
+        window.location.href = "sold.html"
     });
 };
 
@@ -81,8 +58,14 @@ cancel.addEventListener("click", () => {
 let ShowLoader = () => {
     setTimeout(() => {
         loader.style.display = "none";
-        sold.style.display = "block"
+        dashboard.style.display = "block"
     }, 3000);
 };
 
 ShowLoader();
+
+let current_date = new Date();
+
+let current_Day = current_date.toDateString();
+
+date.textContent = `${current_Day}`

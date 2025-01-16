@@ -10,6 +10,20 @@
     --white: #fff;
     --black: #000;
 }
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background: var(--black);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--lightgreen);
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+      background: var(--lightgreen);
+      transition: .4s;
+  }
 .nav_container{
     z-index: 100;
     position: fixed;
@@ -17,15 +31,16 @@
     right: 0;
     top: 0;
     background: var(--white);
-    padding: 10px 15px;
+    padding: 10px 10px;
 }
 
 /* Changes made here - reduced the font-size of your logo */
 .logo p{
     font-size: 20px;
     position: relative;
-    top: 10px;
-    margin: 0 10px;
+    top: 18px;
+    margin: 0 18px;
+    color: var(--lightgreen);
 }
 .second_main{
     position: relative;
@@ -56,7 +71,7 @@
     text-decoration: underline 2px solid lightgreen;
 }
 .nav_links span{
-    padding: 20px 20px;
+    padding: 20px 10px;
     /* position: relative;
     right: 70px;
     top: 20px; */
@@ -74,7 +89,7 @@
     border-radius: 50px;
     place-content: end;
     position: relative;
-    top: 20px;
+    top: 25px;
     /* right:70px;    */
 }
 #img:hover{
@@ -231,6 +246,7 @@
 .section2{
     display: flex;
     color: white;
+
 }
 .section2 div{
     margin: 10px;

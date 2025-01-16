@@ -5,6 +5,7 @@ let agent = document.querySelectorAll(".agent");
 let menu = document.getElementById("menu");
 let cancel = document.getElementById("cancel");
 let nav = document.getElementById("nav_links");
+let sold = document.getElementById("sold");
 
 
 for (let i = 0; i < image.length; i++) {
@@ -29,6 +30,12 @@ for (let i = 0; i < agent.length; i++) {
 for (let i = 0; i < lease.length; i++) {
     lease[i].addEventListener("click", () => {
         window.location.href = "lease.html"
+    });
+};
+
+for (let i = 0; i < dashboard.length; i++) {
+    dashboard[i].addEventListener("click", () => {
+        window.location.href = "dashboard.html"
     });
 };
 

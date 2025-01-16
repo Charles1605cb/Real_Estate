@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --lightgreen: #00796b;
+    --white: #fff;
+    --darkgreen: #209040;
+    --lightblack: #29292b;
+    --brown: rgb(134, 103, 63);
+    --lightpurple: rgb(146, 90, 109);
+    --purple: rgb(143, 10, 54);
+}
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background: var(--brown);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--lightpurple);
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+      background: var(--purple);
+      transition: .4s;
+  }
+#dashboard{
+    display: none;
+}
+.dashboard{
+    margin: 0 20px;
+}
+#loader{
+    display: none;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--white);
+}
+.loader {
+    position: relative;
+    color: var(--lightgreen);
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid var(--lightgreen);
+    border-left: 50px solid transparent;
+    animation: 1s starRotate linear infinite;
+  }
+  .loader:before {
+    border-bottom: 40px solid var(--lightgreen);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -22px;
+    left: -31px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  .loader:after {
+    content: '';
+    position: absolute;
+    display: block;
+    color: var(--lightgreen);
+    top: 1.5px;
+    transform: rotate(-70deg);
+    left: -52px;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid var(--lightgreen);
+    border-left: 50px solid transparent;
+  }
+
+@keyframes starRotate {
+  0%{    transform: rotate(0deg) scale(0.15)}
+  50%{    transform: rotate(360deg) scale(1)}
+  100%{    transform: rotate(720deg) scale(0.15)}
+}
+.nav{
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.name{
+    color: var(--lightgreen);
+    position: relative;
+    top: 20px;
+}
+.name:hover{
+    cursor: pointer;
+    text-decoration: underline green;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+.nav_links{
+    display: none;
+}
+.nav_links span:hover, .nav_links2 span:hover{
+    cursor: pointer;
+    text-decoration: underline green;
+}
+.nav_links2 span{
+    margin: 10px;
+}
+.pic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+}
+#date{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    min-height: 50vh;
+    font-size: 3rem;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+.owned, .rented, .leased{
+    outline: 1px solid #29292b;
+}
+.owned p, .rented p, .leased p{
+    margin-bottom: 30px;
+}
+.location h1{
+    text-align: center;
+}
+.chart img{
+    width: 100%;
+}
+.index{
+    text-align: center;
+    margin: 100px;
+}
+.pie{
+    display: flex;
+    justify-content: space-between;
+}
+.pie img{
+    width: 100%;
+}
+.states > div{
+    margin: 50px;
+}
+.imo h2, .lagos h2, .abuja h2, .ebonyi h2, .delta h2{
+    display: flex;
+    justify-content: flex-start;
+}
+.imo p, .lagos p, .abuja p, .ebonyi p, .delta p{
+    color: var(--lightblack);
+}
+.imo span, .lagos span, .abuja span, .ebonyi span, .delta span{
+    display: flex;
+    flex-direction: row;
+}
+#red{
+    color: red;
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+#yellow{
+    color: rgb(241, 241, 34);
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+#blue{
+    color: blue;
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+#sky{
+    color: rgb(63, 120, 143);
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+#green{
+    color: rgb(41, 104, 41);
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width:0) and (max-width:750px) {
+    .nav_links2{
+        display: none;
+    }
+    .nav_links{
+        display: none;
+        position: absolute;
+        top: 45px;
+        background: green;
+        color: var(--white);
+        left: 0;
+        right: 0;
+        text-align: center;
+        min-height: 100vh;
+        transition: all 0.4s ease;
+        animation: navbarAnimate 2s linear;
+    }
+    .nav_links span{
+        display: block;
+        margin: 60px 0;
+    }
+    .nav_links img{
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        width: 75px;
+        height: 75px;
+    }
+    .menu{
+        display:block;
+    }
+    #cancel{
+        display: none;
+        position: absolute;
+        top: 20px;
+    }
+}
