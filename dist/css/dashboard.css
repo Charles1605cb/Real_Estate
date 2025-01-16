@@ -228,9 +228,9 @@
         margin: 60px 0;
     }
     .nav_links img{
-        position: absolute;
-        top: 40px;
-        right: 20px;
+        position: relative;
+        top: 30px;
+        left: 10px;
         width: 75px;
         height: 75px;
     }
