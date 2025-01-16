@@ -180,20 +180,21 @@
           display: none;
       }
       .nav_links{
-          display: none;
-          position: absolute;
-          top: 45px;
-          background: green;
-          color: var(--white);
-          /* right: 0;
-          left: -260px; */
-          text-align: center;
-          min-height: 100vh;
-          width: 100%;
-      }
+        display: none;
+        position: absolute;
+        top: 45px;
+        background: green;
+        color: var(--white);
+        left: 0;
+        right: 0;
+        text-align: center;
+        min-height: 100vh;
+        transition: all 0.4s ease;
+        animation: navbarAnimate 2s linear;
+    }
       .nav_links span{
           display: block;
-          margin: 20px 0;
+          margin: 40px 0;
       }
       .nav_links img{
           width: 75px;

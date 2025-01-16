@@ -85,7 +85,7 @@
 }
 .aaddress{
     background: #f5f5f5;
-    box-shadow: 0 0 10px #2c2b2b;
+    box-shadow: 0 0 4px #2c2b2b;
     margin: 0 10px;
     padding: 20px;
     border-bottom-left-radius: 20px;
@@ -160,14 +160,14 @@
         left: 0;
         right: 0;
         text-align: center;
-        min-width: 100vh;
-        transition: all 0.a4s ease;
+        min-height: 100vh;
+        transition: all 0.4s ease;
         animation: navbarAnimate 2s linear;
     }
-    .anav_links span{
-        display: block;
-        margin: 20px 0;
-    }
+      .anav_links span{
+          display: block;
+          margin: 40px 0;
+      }
     .anav_links img{
         position: absolute;
         top: 40px;
