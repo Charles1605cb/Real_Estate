@@ -68,4 +68,18 @@ let current_date = new Date();
 
 let current_Day = current_date.toDateString();
 
-date.textContent = `${current_Day}`
+date.textContent = `${current_Day}`;
+
+
+// Add active link to the active page
+let currentPage = document.getElementById("active");
+
+const addActiveLink = () => {  
+    if (currentPage) {
+        currentPage.classList.add("active");
+    }else{
+        currentPage.classList.remove("active");
+    }
+};
+
+document.addEventListener("DOMContentLoaded", addActiveLink);
