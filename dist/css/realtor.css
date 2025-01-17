@@ -67,7 +67,9 @@
 .nav_links span:hover{
     cursor: pointer;
     transition: .3s;
-    text-decoration: underline 2px solid lightgreen;
+    color: var(--lightgreen);
+    font-weight: bold;
+    /* text-decoration: underline 2px solid var(--lightgreen); */
 }
 .nav_links span{
     padding: 20px 20px;
@@ -313,6 +315,16 @@
   50%{    transform: rotate(360deg) scale(1)}
   100%{    transform: rotate(720deg) scale(0.15)}
 }
+
+  /* To add active link to each ofthe page */
+
+    .active{
+        color: #00796b;
+        /* text-decoration: underline; */
+        font-weight: bold;
+        border-bottom: 2px solid var(--lightgreen);
+        padding-top: 5px;
+    }
 @media screen and (min-width:0) and (max-width:750px) {
     .nav_links{
         display: none; 

@@ -53,3 +53,16 @@ cancel.addEventListener("click", () => {
     nav.style.display = "none"
 });
 // console.log(menu)
+
+// Add active link to the active page
+let currentPage = document.getElementById("active");
+
+const addActiveLink = () => {  
+    if (currentPage) {
+        currentPage.classList.add("active");
+    }else{
+        currentPage.classList.remove("active");
+    }
+};
+
+document.addEventListener("DOMContentLoaded", addActiveLink);

@@ -141,12 +141,30 @@
     margin: 5px 0;
   }
 
+  /* To add active link to each ofthe page */
+
+    .active{
+        color: #00796b;
+        /* text-decoration: underline; */
+        font-weight: bold;
+        border-bottom: 2px solid var(--lightgreen);
+        padding-top: 5px;
+    }
+
 @media screen and (min-width:0) and (max-width:750px) {
     .agrid{
         grid-template-columns: auto;
     }
     .abackground{
         padding: 100px;
+    }
+    .agrid img{
+        width: 90%;
+    }
+    .aaddress{
+    width: 90%;
+    position: relative;
+    left: 5px;
     }
     .anav_links2{
         display: none;
