@@ -74,7 +74,7 @@ let ShowLoader = () => {
     setTimeout(() => {
         Loader.style.display = "none"
         main.style.display = "block"
-    }, 9000);
+    }, 2000);
 };
 
 ShowLoader();
@@ -90,3 +90,17 @@ let contact = document.getElementById("contact");
 contact.addEventListener("clcick", () => {
     window.location.href = "contact.html";
 });
+
+
+// Add active link to the active page
+let currentPage =  document.querySelector(".activeText");
+
+const addActiveLink = () => {  
+    if (currentPage) {
+        currentPage.classList.add("active");
+    }else{
+        currentPage.classList.remove("active");
+    }
+};
+
+document.addEventListener("DOMContentLoaded", addActiveLink);

@@ -38,7 +38,9 @@
 }
 .nav_links span:hover, .nav_links2 span:hover{
     cursor: pointer;
-    text-decoration: underline green;
+    font-weight: bold;
+    transition: .2s;
+    color: var(--lightgreen);
 }
 .nav_links2 span{
     margin: 10px;
@@ -149,7 +151,15 @@
   .about p, .support p, .find_us p, .social p{
     margin: 5px 0;
   }
+/* To add active link to each ofthe page */
 
+    .active{
+        color: #00796b;
+        /* text-decoration: underline; */
+        font-weight: bold;
+        border-bottom: 2px solid var(--lightgreen);
+        padding-top: 5px;
+    }
 @media screen and (min-width:0) and (max-width:750px) {
     .lease{
         margin: 20px 10px;
@@ -199,6 +209,11 @@
           display: block;
           margin: 40px 0;
       }
+       .nav_links span:hover, .nav_links2 span:hover{
+      cursor: pointer;
+      transition: .3s;
+      color: var(--white);
+  }
       .nav_links img{
           width: 75px;
           height: 75px;

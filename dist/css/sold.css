@@ -107,8 +107,10 @@
   display: none;
 }
 .nav_links span:hover, .nav_links2 span:hover{
-  cursor: pointer;
-  text-decoration: underline green;
+   cursor: pointer;
+    transition: .3s;
+    color: var(--lightgreen);
+    font-weight: bold;
 }
 .nav_links2 span{
   margin: 10px;
@@ -212,6 +214,16 @@
   margin: 5px 0;
 }
 
+ /* To add active link to each ofthe page */
+
+    .active{
+        color: #00796b;
+        /* text-decoration: underline; */
+        font-weight: bold;
+        border-bottom: 2px solid var(--lightgreen);
+        padding-top: 5px;
+    }
+
 @media screen and (min-width:0) and (max-width:750px) {
   /* #sold{
     width: 300px;
@@ -263,6 +275,11 @@
   .nav_links span{
       display: block;
       margin: 40px 0;
+  }
+  .nav_links span:hover, .nav_links2 span:hover{
+      cursor: pointer;
+      transition: .3s;
+      color: var(--white);
   }
   .nav_links img{
       width: 75px;
