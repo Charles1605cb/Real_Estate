@@ -1,5 +1,4 @@
 
-let image = document.querySelectorAll(".image");
 let buy = document.querySelectorAll(".buy");
 let lease = document.querySelectorAll(".lease");
 let agent = document.querySelectorAll(".agent");
@@ -11,37 +10,8 @@ let nav = document.getElementById("nav_links");
 let loader = document.getElementById("loader");
 let contact = document.getElementById("contact");
 
-// Please take note of this code below, it is very important for the functionality of the website
-
-// Prevent Image dragging
-
-    document.querySelectorAll("img").forEach((img) => {
-      img.addEventListener("mousedown", function (event) {
-        event.preventDefault();
-      });
-      img.addEventListener("contextmenu", function (event) {
-        event.preventDefault();
-      });
-    });
-
- // Add a box_shadow to the nav_container when a user scrolls
-    let nav_Container = document.querySelector(".nav");
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-            // Add a box_shadow to the nav_container
-            nav_Container.classList.add("nav_shadow");
-        }else{
-            nav_Container.classList.remove("nav_shadow");
-        }
-    });
 
 
-for (let i = 0; i < image.length; i++) {
-    image[i].addEventListener("click", () => {
-         window.location.href = "description.html"
-    });
-    
-};
 
 for (let i = 0; i < buy.length; i++) {
     buy[i].addEventListener("click", () => {
