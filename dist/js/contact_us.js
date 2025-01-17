@@ -1,16 +1,39 @@
+
 let image = document.querySelectorAll(".image");
 let buy = document.querySelectorAll(".buy");
 let lease = document.querySelectorAll(".lease");
-let sold = document.querySelectorAll(".sold")
-let contact = document.querySelectorAll(".contact")
 let agent = document.querySelectorAll(".agent");
+let sold = document.querySelectorAll(".sold");
+let dashboard = document.querySelectorAll(".dashboard");
 let menu = document.getElementById("menu");
 let cancel = document.getElementById("cancel");
 let nav = document.getElementById("nav_links");
 let loader = document.getElementById("loader");
-let dashboard = document.getElementById("dashboard");
-let date = document.getElementById("date");
+let contact = document.getElementById("contact");
 
+// Please take note of this code below, it is very important for the functionality of the website
+
+// Prevent Image dragging
+
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("mousedown", function (event) {
+        event.preventDefault();
+      });
+      img.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+    });
+
+ // Add a box_shadow to the nav_container when a user scrolls
+    let nav_Container = document.querySelector(".nav");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+            // Add a box_shadow to the nav_container
+            nav_Container.classList.add("nav_shadow");
+        }else{
+            nav_Container.classList.remove("nav_shadow");
+        }
+    });
 
 
 for (let i = 0; i < image.length; i++) {
@@ -32,24 +55,23 @@ for (let i = 0; i < agent.length; i++) {
     });
 };
 
-for (let i = 0; i < lease.length; i++) {
-    lease[i].addEventListener("click", () => {
-        window.location.href = "lease.html"
-    });
-};
-
 for (let i = 0; i < sold.length; i++) {
     sold[i].addEventListener("click", () => {
         window.location.href = "sold.html"
     });
 };
 
-for (let i = 0; i < contact.length; i++) {
-    contact[i].addEventListener("click", () => {
-        window.location.href = "contact.html"
+for (let i = 0; i < lease.length; i++) {
+    lease[i].addEventListener("click", () => {
+        window.location.href = "lease.html"
     });
-    
-}
+};
+
+for (let i = 0; i < dashboard.length; i++) {
+    dashboard[i].addEventListener("click", () => {
+        window.location.href = "dashboard.html"
+    });
+};
 
 menu.addEventListener("click", () => {
     menu.style.display = "none";
@@ -66,14 +88,8 @@ cancel.addEventListener("click", () => {
 let ShowLoader = () => {
     setTimeout(() => {
         loader.style.display = "none";
-        dashboard.style.display = "block"
-    }, 3000);
+        contact.style.display = "block"
+    }, 1000);
 };
 
 ShowLoader();
-
-let current_date = new Date();
-
-let current_Day = current_date.toDateString();
-
-date.textContent = `${current_Day}`

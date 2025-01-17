@@ -83,4 +83,10 @@ let dashboard = document.getElementById("dashboard");
 
 dashboard.addEventListener("clcick", () => {
     window.location.href = "dashboard.html";
-})
+});
+
+let contact = document.getElementById("contact");
+
+contact.addEventListener("clcick", () => {
+    window.location.href = "contact.html";
+});

@@ -2,6 +2,7 @@ let image = document.querySelectorAll(".aimage");
 let sold = document.querySelectorAll(".sold");
 let lease = document.querySelectorAll(".alease");
 let agent = document.querySelectorAll(".aagent");
+let contact = document.querySelectorAll(".contact");
 let menu = document.getElementById("menu");
 let cancel = document.getElementById("cancel");
 let nav = document.getElementById("nav_links");
@@ -38,6 +39,13 @@ for (let i = 0; i < dashboard.length; i++) {
         window.location.href = "dashboard.html"
     });
 };
+
+for (let i = 0; i < array.length; i++) {
+    contact[i].addEventListener("click", () => {
+        window.location.href = "contact.html";
+    });
+    
+}
 
 menu.addEventListener("click", () => {
     menu.style.display = "none";

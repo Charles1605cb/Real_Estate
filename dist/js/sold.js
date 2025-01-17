@@ -4,6 +4,7 @@ let buy = document.querySelectorAll(".buy");
 let lease = document.querySelectorAll(".lease");
 let agent = document.querySelectorAll(".agent");
 let dashboard = document.querySelectorAll(".dashboard");
+let Contact = document.querySelectorAll(".Contact");
 let menu = document.getElementById("menu");
 let cancel = document.getElementById("cancel");
 let nav = document.getElementById("nav_links");
@@ -65,6 +66,13 @@ for (let i = 0; i < dashboard.length; i++) {
         window.location.href = "dashboard.html"
     });
 };
+
+for (let i = 0; i < Contact.length; i++) {
+    Contact[i].addEventListener("click", () => {
+        window.location.href = "contact.html"
+    })
+    
+}
 
 menu.addEventListener("click", () => {
     menu.style.display = "none";
