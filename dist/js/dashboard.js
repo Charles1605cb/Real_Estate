@@ -2,7 +2,7 @@ let image = document.querySelectorAll(".image");
 let buy = document.querySelectorAll(".buy");
 let lease = document.querySelectorAll(".lease");
 let sold = document.querySelectorAll(".sold")
-let contact = document.querySelectorAll(".contact")
+// let contact = document.querySelectorAll(".contact")
 let agent = document.querySelectorAll(".agent");
 let menu = document.getElementById("menu");
 let cancel = document.getElementById("cancel");
@@ -44,12 +44,12 @@ for (let i = 0; i < sold.length; i++) {
     });
 };
 
-for (let i = 0; i < contact.length; i++) {
-    contact[i].addEventListener("click", () => {
-        window.location.href = "contact.html"
-    });
+// for (let i = 0; i < contact.length; i++) {
+//     contact[i].addEventListener("click", () => {
+//         window.location.href = "contact.html"
+//     });
     
-}
+// }
 
 menu.addEventListener("click", () => {
     menu.style.display = "none";

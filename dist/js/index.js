@@ -2,11 +2,13 @@ let image = document.querySelectorAll(".aimage");
 let sold = document.querySelectorAll(".sold");
 let lease = document.querySelectorAll(".alease");
 let agent = document.querySelectorAll(".aagent");
-let contact = document.querySelectorAll(".contact");
+// let contact = document.querySelectorAll(".contact");
 let menu = document.getElementById("menu");
 let cancel = document.getElementById("cancel");
 let nav = document.getElementById("nav_links");
-let dashboard = document.querySelectorAll(".dashboard")
+let dashboard = document.querySelectorAll(".dashboard");
+let buy = document.getElementById("buy");
+
 
 
 for (let i = 0; i < image.length; i++) {
@@ -40,12 +42,12 @@ for (let i = 0; i < dashboard.length; i++) {
     });
 };
 
-for (let i = 0; i < array.length; i++) {
-    contact[i].addEventListener("click", () => {
-        window.location.href = "contact.html";
-    });
+// for (let i = 0; i < array.length; i++) {
+//     contact[i].addEventListener("click", () => {
+//         window.location.href = "contact.html";
+//     });
     
-}
+// }
 
 menu.addEventListener("click", () => {
     menu.style.display = "none";
@@ -71,3 +73,13 @@ const addActiveLink = () => {
 };
 
 document.addEventListener("DOMContentLoaded", addActiveLink);
+
+
+let ShowLoader = () => {
+    setTimeout(() => {
+        loader.style.display = "none";
+        buy.style.display = "block"
+    }, 1000);
+};
+
+ShowLoader();
